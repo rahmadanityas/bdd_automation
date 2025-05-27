@@ -98,7 +98,6 @@ allure open allure-report
 ```
 
 📁 Project Structure
-```
 your-repo-name/
 │
 ├── features/
@@ -111,4 +110,3 @@ your-repo-name/
 ├── requirements.txt
 ├── README.md
 └── .venv/                       # Virtual environment (excluded in .gitignore)
-```
