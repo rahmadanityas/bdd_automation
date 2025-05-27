@@ -1,104 +1,115 @@
-# bdd_automation
-Automation Web and Desktop App Testing Using Pyhton, Allure, and Gerkhin 
+# 🧪 Behave BDD + Selenium + Allure Reporting for YouTube Test Automation
 
-🧪 Behave BDD Automation with Allure Report (Python + Selenium)
-This project runs automated UI tests (e.g., YouTube search) using Behave BDD with Allure reporting.
+This project demonstrates end-to-end UI test automation using **Python**, **Behave BDD**, **Selenium**, and **Allure** to test YouTube functionality (search and play a video).
 
-✅ Prerequisites
-Make sure you have the following installed:
+---
 
-Tool	Version/Command
-Python	3.8+ (python --version)
-pip	latest (python -m pip install --upgrade pip)
-Google Chrome	Installed
-ChromeDriver	Match your Chrome version
-Git	Installed
+## ✅ Prerequisites
 
-🔧 1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-🛠️ 2. Set Up Virtual Environment
-bash
-Copy
-Edit
+Make sure you have the following installed on your system:
+
+| Tool         | Required |
+|--------------|----------|
+| Python 3.8+  | ✅       |
+| pip          | ✅       |
+| Google Chrome| ✅       |
+| ChromeDriver | ✅       |
+| Git          | ✅       |
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```
+git clone https://github.com/rahmadanityas/bdd_automation.git
+cd bdd_automation.git
+```
+
+### 2. Create virtual environment
+```
 python -m venv .venv
-.venv\Scripts\activate    # Windows
-# Or
-source .venv/bin/activate # macOS/Linux
-📦 3. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-If you don't have a requirements.txt, create it with:
+```
 
-txt
-Copy
-Edit
+# Activate it
+# On Windows:
+```
+.venv\Scripts\activate
+```
+
+# On macOS/Linux:
+```
+source .venv/bin/activate
+```
+
+### 3. Install Python Dependencies
+```
+pip install -r requirements.txt
+```
+
+# If requirements.txt is missing, create one with:
+```
 behave
 selenium
 allure-behave
 pyautogui
-Install with:
+```
 
-bash
-Copy
-Edit
+# Then run:
+```
 pip install behave selenium allure-behave pyautogui
-🧪 4. Run the Behave Test with Allure Formatter
-bash
-Copy
-Edit
+```
+
+## 🚀 Running the Test with Allure Report
+### 1. Run Tests and Generate Raw Report Data
+This command runs the test and stores Allure JSON results in the reports/ folder.
+```
 behave -f allure_behave.formatter:AllureFormatter -o reports/ features/
-This will run all feature files in the features/ directory and generate raw Allure JSON results into the reports/ folder.
+```
 
-📈 5. Install Allure CLI (to Generate Web Reports)
-🅰️ Option A – Using Scoop (Windows)
-bash
-Copy
-Edit
+### 2. Install Allure CLI (One-Time Setup)
+# Windows (via Scoop)
+```
 scoop install allure
-🅱️ Option B – Using Chocolatey (Windows)
-bash
-Copy
-Edit
+```
+
+# Windows (via Chocolatey)
+```
 choco install allure
-🅾️ Option C – Manually via ZIP
-Download from https://github.com/allure-framework/allure2/releases
-Then add the bin/ folder to your PATH.
+```
 
-🌐 6. Generate the HTML Report
-bash
-Copy
-Edit
+# macOS (via Homebrew)
+```
+brew install allure
+```
+
+# Or Download Manually and Add to PATH
+
+### 3. Generate the HTML Report
+```
 allure generate reports/ -o allure-report --clean
-🚀 7. Open the Allure Report in Your Browser
-bash
-Copy
-Edit
+```
+
+### 4. Open the Allure Report in Your Browser
+This will start a local web server and launch your browser to view the report.
+```
 allure open allure-report
-This will:
+```
 
-Launch a local server
-
-Open the interactive report in your browser (http://localhost:port/)
-
-🗂️ Project Structure
-bash
+📁 Project Structure
+graphql
 Copy
 Edit
 your-repo-name/
 │
 ├── features/
-│   ├── example.feature
+│   ├── example.feature          # Gherkin scenarios
 │   └── steps/
-│       └── steps.py
+│       └── steps.py             # Step definitions
 │
-├── reports/                # Allure raw JSON results
-├── allure-report/          # HTML web report (after generating)
+├── reports/                     # Allure JSON files (generated after tests)
+├── allure-report/               # HTML report (generated)
 ├── requirements.txt
 ├── README.md
-└── .venv/                  # Python virtual environment (ignored in .gitignore)
+└── .venv/                       # Virtual environment (excluded in .gitignore)
