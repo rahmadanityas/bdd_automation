@@ -1,0 +1,53 @@
+{
+  "name": "Open Word and type a message",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Given I click the start menu",
+      "status": "passed",
+      "start": 1748332155671,
+      "stop": 1748332157774
+    },
+    {
+      "name": "When I search for \"Word\"",
+      "status": "passed",
+      "start": 1748332157775,
+      "stop": 1748332160283
+    },
+    {
+      "name": "And I open Word",
+      "status": "passed",
+      "start": 1748332160283,
+      "stop": 1748332165389
+    },
+    {
+      "name": "Then I type \"Hi I'm Here :]\"",
+      "status": "passed",
+      "start": 1748332165389,
+      "stop": 1748332168934
+    }
+  ],
+  "start": 1748332155670,
+  "stop": 1748332168934,
+  "uuid": "85cb53da-2894-4d33-a7cb-2af86bf408ac",
+  "historyId": "4c0df5dda4e72abc13a3636973c45978",
+  "fullName": "Typing in Word: Open Word and type a message",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "feature",
+      "value": "Typing in Word"
+    },
+    {
+      "name": "framework",
+      "value": "behave"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    }
+  ]
+}

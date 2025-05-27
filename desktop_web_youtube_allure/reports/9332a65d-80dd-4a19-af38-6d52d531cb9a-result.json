@@ -1,0 +1,111 @@
+{
+  "name": "Open news article using organization account in Edge",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "Given the Edge browser is open",
+      "status": "passed",
+      "start": 1748332118745,
+      "stop": 1748332120643
+    },
+    {
+      "name": "When the user opens the IDEMIA Line homepage",
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Opening IDEMIA Line homepage",
+          "status": "passed",
+          "start": 1748332120644,
+          "stop": 1748332130892
+        }
+      ],
+      "start": 1748332120643,
+      "stop": 1748332130892
+    },
+    {
+      "name": "And the user navigates to the Global News Center",
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Clicking on Global News Center",
+          "status": "passed",
+          "start": 1748332130893,
+          "stop": 1748332133981
+        }
+      ],
+      "start": 1748332130893,
+      "stop": 1748332133981
+    },
+    {
+      "name": "And the user searches for the IST news article",
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Typing the IST news article title in search input",
+          "status": "passed",
+          "start": 1748332133982,
+          "stop": 1748332134417
+        }
+      ],
+      "start": 1748332133981,
+      "stop": 1748332134417
+    },
+    {
+      "name": "And the user applies the search filter",
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Clicking the apply filter button",
+          "status": "passed",
+          "start": 1748332134418,
+          "stop": 1748332140209
+        }
+      ],
+      "start": 1748332134417,
+      "stop": 1748332140209
+    },
+    {
+      "name": "And the user opens the article",
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Clicking the article link and switching to new tab",
+          "status": "passed",
+          "start": 1748332140210,
+          "stop": 1748332143311
+        }
+      ],
+      "start": 1748332140209,
+      "stop": 1748332143311
+    },
+    {
+      "name": "Then the news article is displayed",
+      "status": "passed",
+      "start": 1748332143311,
+      "stop": 1748332155665
+    }
+  ],
+  "start": 1748332118744,
+  "stop": 1748332155665,
+  "uuid": "80a650c1-37a0-4142-8db1-747391d04d75",
+  "historyId": "57971f29b4e8b0ab0c0ec02cfe60aba7",
+  "fullName": "IDEMIA News Access: Open news article using organization account in Edge",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "feature",
+      "value": "IDEMIA News Access"
+    },
+    {
+      "name": "framework",
+      "value": "behave"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    }
+  ]
+}
