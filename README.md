@@ -98,9 +98,7 @@ allure open allure-report
 ```
 
 📁 Project Structure
-graphql
-Copy
-Edit
+```
 your-repo-name/
 │
 ├── features/
@@ -113,3 +111,4 @@ your-repo-name/
 ├── requirements.txt
 ├── README.md
 └── .venv/                       # Virtual environment (excluded in .gitignore)
+```
